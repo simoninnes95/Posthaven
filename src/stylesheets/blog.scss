@@ -392,7 +392,7 @@ $logoWidth: 100px;
   p { margin: 24px 0; }
 
   img, object, embed, iframe { max-width: 100%; }  /* responsive resize */
-  img { height: auto; } // Don't allow max-width on imgs to distort
+  img { height: 500; } // Don't allow max-width on imgs to distort
   iframe { max-width: inherit\9; } /* IE8 css bug */
 
   blockquote p { font-size: $bodyFontSize; }
