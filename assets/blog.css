@@ -1008,7 +1008,8 @@ blockquote.posterous_long_quote {
   .post p {
     margin: 24px 0; }
   .post img, .post object, .post embed, .post iframe {
-    max-width: 100%; }
+    max-width: 100%; 
+    height: 100px; }
   .post img {
     height: auto; }
   .post iframe {
