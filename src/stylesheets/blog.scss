@@ -380,7 +380,7 @@ $logoWidth: 100px;
   > figure {
     text-align: center;
     img {
-      max-width: 400px;
+      max-width: unquote("min(400px, 100%)");
       max-height: 400px;
       width: auto;
       height: auto;
@@ -403,16 +403,16 @@ $logoWidth: 100px;
     img {
       display: block;
       margin: 0 auto;
-      max-width: 600px;
+      max-width: unquote("min(600px, 100%)");
       max-height: 600px;
       width: auto;
       height: auto;
     }
 
     // Ensure any inline container wrapping an image (e.g. <a>, <p>) is also centred
+    // inline-block keeps gallery thumbnails horizontal while allowing text-align: center to work
     a:has(> img) {
-      display: block;
-      text-align: center;
+      display: inline-block;
     }
 
     p:has(img) {
@@ -421,8 +421,8 @@ $logoWidth: 100px;
   }
   p { margin: 24px 0; }
 
-  img, object, embed, iframe { max-width: 600px; }  /* responsive resize */
-  img { max-height: 600px; width: auto; height: auto; } // Constrain to 400px longest side
+  img, object, embed, iframe { max-width: unquote("min(600px, 100%)"); }  /* responsive resize */
+  img { max-height: 600px; width: auto; height: auto; } // Cap at 600px, responsive on mobile
   iframe { max-width: inherit\9; } /* IE8 css bug */
 
   blockquote p { font-size: $bodyFontSize; }

@@ -996,7 +996,7 @@ blockquote.posterous_long_quote {
   .post > figure {
     text-align: center; }
     .post > figure img {
-      max-width: 400px;
+      max-width: min(400px, 100%);
       max-height: 400px;
       width: auto;
       height: auto;
@@ -1018,19 +1018,18 @@ blockquote.posterous_long_quote {
   .post .post-body img {
     display: block;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: min(600px, 100%);
     max-height: 600px;
     width: auto;
     height: auto; }
   .post .post-body a:has(> img) {
-    display: block;
-    text-align: center; }
+    display: inline-block; }
   .post .post-body p:has(img) {
     text-align: center; }
   .post p {
     margin: 24px 0; }
   .post img, .post object, .post embed, .post iframe {
-    max-width: 600px; }
+    max-width: min(600px, 100%); }
   .post img {
     max-height: 600px;
     width: auto;
