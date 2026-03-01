@@ -993,8 +993,12 @@ blockquote.posterous_long_quote {
   margin-bottom: 80px;
   /* responsive resize */
   /* IE8 css bug */ }
-  .post > figure img {
-    max-height: 60vh; }
+  .post > figure {
+    text-align: center; }
+    .post > figure img {
+      max-height: 60vh;
+      display: block;
+      margin: 0 auto; }
   .post .post-body h1, .post .post-body h2, .post .post-body h3 {
     color: #333;
     margin-top: 30px; }
@@ -1005,13 +1009,18 @@ blockquote.posterous_long_quote {
   .post .post-body h3 {
     font-size: 22px;
     font-style: italic; }
+  .post .post-body figure {
+    text-align: center;
+    margin: 24px 0; }
+  .post .post-body img {
+    display: block;
+    margin: 0 auto; }
   .post p {
     margin: 24px 0; }
   .post img, .post object, .post embed, .post iframe {
-    max-width: 100%; 
-    height: 100px; }
+    max-width: 100%; }
   .post img {
-    height: auto; }
+    height: 500; }
   .post iframe {
     max-width: inherit\9; }
   .post blockquote p {

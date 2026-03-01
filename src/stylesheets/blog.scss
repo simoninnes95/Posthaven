@@ -378,8 +378,11 @@ $logoWidth: 100px;
   margin-top: 40px; margin-bottom: 80px;
 
   > figure {
+    text-align: center;
     img {
       max-height: 60vh;
+      display: block;
+      margin: 0 auto;
     }
   }
 
@@ -388,6 +391,16 @@ $logoWidth: 100px;
     h1 { font-size: 22px; }
     h2 { font-size: 20px; }
     h3 { font-size: 22px; font-style: italic; }
+
+    figure {
+      text-align: center;
+      margin: 24px 0;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
   }
   p { margin: 24px 0; }
 
