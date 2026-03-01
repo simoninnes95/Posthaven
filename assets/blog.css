@@ -996,7 +996,10 @@ blockquote.posterous_long_quote {
   .post > figure {
     text-align: center; }
     .post > figure img {
-      max-height: 60vh;
+      max-width: 400px;
+      max-height: 400px;
+      width: auto;
+      height: auto;
       display: block;
       margin: 0 auto; }
   .post .post-body h1, .post .post-body h2, .post .post-body h3 {
@@ -1014,13 +1017,24 @@ blockquote.posterous_long_quote {
     margin: 24px 0; }
   .post .post-body img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 600px;
+    max-height: 600px;
+    width: auto;
+    height: auto; }
+  .post .post-body a:has(> img) {
+    display: block;
+    text-align: center; }
+  .post .post-body p:has(img) {
+    text-align: center; }
   .post p {
     margin: 24px 0; }
   .post img, .post object, .post embed, .post iframe {
-    max-width: 100%; }
+    max-width: 600px; }
   .post img {
-    height: 500; }
+    max-height: 600px;
+    width: auto;
+    height: auto; }
   .post iframe {
     max-width: inherit\9; }
   .post blockquote p {
